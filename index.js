@@ -5,7 +5,7 @@ const https = require('https')
 
 const PORT = process.env.PORT || 8443
 const KEY = process.env.KEY || './certs/key.pem'
-const CERT = process.env.CERT || './certs/key.pem'
+const CERT = process.env.CERT || './certs/cert.pem'
 const options = {
   key: fs.readFileSync(KEY),
   cert: fs.readFileSync(CERT)
